@@ -1,0 +1,32 @@
+{
+  "name": "@kitcon/ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalyuk/kitcon-ui.git"
+  },
+  "author": "Dmitriy Kalyuk <kalyukdo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalyuk/kitcon-ui/issues"
+  },
+  "homepage": "https://github.com/kalyuk/kitcon-ui#readme",
+  "dependencies": {
+    "mobx": "^5.15.6",
+    "qs": "^6.9.4",
+    "react": "^16.13.1",
+    "react-router-config": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/qs": "^6.9.4",
+    "@types/react": "^16.9.49",
+    "@types/react-router-config": "^5.0.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
