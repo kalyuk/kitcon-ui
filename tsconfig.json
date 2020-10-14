@@ -17,7 +17,8 @@
         "target": "es5",
         "jsx": "react",
         "paths": {
-            "@kitcon/core/*": ["./kitcon/core/src/*", "../kitcon-core/src/*"]
+            "@kitcon/core/*": ["../kitcon-core/src/*"],
+            "@kitcon/node/*": ["../kitcon-node/src/*"]
         }
     },
     "files": [
