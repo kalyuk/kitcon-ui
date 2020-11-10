@@ -10,7 +10,7 @@ export class LocationService {
 
     get history() {
         // @ts-ignore
-        if (global.IS_BROWSER) {
+        if (global.IS_BROWSER && !this._history) {
             this._history = History.createBrowserHistory();
         }
 
@@ -34,13 +34,20 @@ export class LocationService {
         }
     }
 
+    get currentPage() {
+        return this.pathname + '?' + qs.stringify(this.query);
+    }
+
     public handleChangeLocation = (location: any) => {
         this.query = qs.parse(location.search, { ignoreQueryPrefix: true });
         this.pathname = location.pathname;
     }
 
-    go(pathname: string) {
-        this.history.push(pathname)
+    go(pathname: string, query: any = {}) {
+        this.history.push({
+            pathname,
+            search: '?' + qs.stringify(query)
+        })
     }
 
 
